@@ -13,3 +13,5 @@ Here is the [SchubertPolynomials](https://github.com/pseudoeffective/SchubertPol
 Here is my [first experiment](./ml-lrc.md) in ML.
 
 Here is a widget for drawing [bumpless pipe dreams](https://github.com/pseudoeffective/bpds#bpds).
+
+Here are some [essays](./essays.md).
