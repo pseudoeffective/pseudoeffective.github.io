@@ -109,6 +109,6 @@ If you're thinking of writing and sharing your thoughts somewhere, and wondering
 
 ***
 
-*Thanks to Liz Vivas and Daoji Huang for conversations that led to these ideas, and feedback on earlier drafts.*
+*Thanks to Liz Vivas and Daoji Huang for conversations and for feedback on earlier drafts.*
 
 -[Dave Anderson](https://pseudoeffective.github.io), 2026.9.15
