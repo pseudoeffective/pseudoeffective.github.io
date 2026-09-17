@@ -4,6 +4,6 @@ layout: default
 
 ## Essays
 
-A collection of writing on mathematics and other things.
+On mathematics and other things.  These are intended primarily for mathematicians.
 
 * [What Am I Doing Here?](./essays/what_am_i_doing_here.md)
