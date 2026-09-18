@@ -99,7 +99,7 @@ There is much to do with our time here!
 
 ***
 
-*Postscript*.  Among the myriad things I learned about mathematics and life from my former advisor, ongoing co-author, and friend Bill Fulton, one of the most profound was also one of the simplest.  Sometime in grad school, in a discussion about whether and which conferences to attend, he told me, "You know, people learn to do what people around them are doing."
+*Postscript*.  Among the myriad things I learned about mathematics and life from my former advisor and ongoing co-author Bill Fulton, one of the most profound was also one of the simplest.  Sometime in grad school, in a discussion about whether and which conferences to attend, he told me, "You know, people learn to do what people around them are doing."
 
 From the time I started drafting this essay to the time I finished, dozens if not hundreds of others have appeared on similar topics.  Fantastic!  I haven't read them all, but many of those I have read are excellent.  Surely everything I've said here is contained in one or more of those; surely at least some of them said it better.
 
