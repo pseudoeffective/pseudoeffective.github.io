@@ -137,7 +137,7 @@ At least until the next model is released and the terms of the debate are scramb
  secrecy in mathematics is at this MathOverflow <a href="https://mathoverflow.net/questions/515260/how-do-we-prevent-mathematics-from-devolving-into-the-medieval-era-of-secrecy">post</a>.
 <a href="#ref1">↩</a></p>
 
-<p id="fn2">2. At the border of industry and science, a 2009 editorial in a medical journal suggested reviving the practice of *pli cacheté* as a way of safeguarding patents, see <a href="https://www.sciencedirect.com/science/article/pii/S0306987708004192">here</a>. 
+<p id="fn2">2. At the border of industry and science, a 2009 editorial in a medical journal suggested reviving the 18th-century practice of <i>pli cacheté</i> --- sealed envelopes that establish priority claims --- as a way of safeguarding patents, see <a href="https://www.sciencedirect.com/science/article/pii/S0306987708004192">here</a>. 
 <a href="#ref2">↩</a></p>
 
 
