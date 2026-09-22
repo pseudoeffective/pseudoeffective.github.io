@@ -97,14 +97,9 @@ The dark forest response is a rational reaction to hostile conditions.  It might
 
 ***
 
-But it would not be without precedent.  This situation was common throughout much of history!  Renaissance mathematicians used to "duel" each other with challenges to solve cubic equations, keeping their methods secret in order to win such competitions.  (Tartaglia famously shared his secret to Cardano, who eventually published it.)  Newton staked his priority claim over Leibniz in inventing calculus on a cryptic anagram.  In 18th century France, the Académie des Sciences had an institutionalized tradition of *plis cachetés*, sealed envelopes establishing priority, which would be opened periodically by academy officials.<sup><a href="#fn1" id="ref1">1</a></sup>
+But it would not be without precedent.  This situation was common throughout much of history: Renaissance mathematicians used to "duel" each other with challenges to solve cubic equations, keeping their methods secret in order to win such competitions.<sup><a href="#fn1" id="ref1">1</a></sup>  And even today, communication practices vary widely across disciplines.  The IAS Schools of Mathematics and Natural Science maintain online repositories of nearly 6,000 video lectures, recording nearly every seminar talk over the last 20 years, all of them freely available on YouTube; over the same period, the Schools of History and Social Science combined list roughly 200 videos, most of them public lectures or high-profile events.  Not to mention industry, where protecting proprietary knowledge is simply sound business practice! And any science that has closer contact with industrial development and patenting is going to have a more circumspect culture when it comes to sharing ideas.<sup><a href="#fn2" id="ref2">2</a></sup>
 
-
-And to some extent it remains the norm in other academic disciplines.  The IAS Schools of Mathematics and Natural Science maintain online repositories of nearly 6,000 video lectures, recording nearly every seminar talk over the last 20 years, all of them freely available on YouTube.  Over the same period, the Schools of History and Social Science combined list roughly 200 videos, most of them public lectures or high-profile events.  I don't really know the reason for this cultural variation, but a few historians have told me (unprompted!) their guess: the years-long process of gathering data and combing through archives is the major work behind writing a book, and they're concerned about giving it away before publication, because the book itself is where credit is counted.  (In other words, they don't want to get scooped in the "last mile" --- a variation on the Overhang.)
-
-Not to mention industry, where protecting proprietary knowledge is simply sound business practice! And any science that has closer contact with industrial development and patenting is going to have a more circumspect culture when it comes to sharing ideas.<sup><a href="#fn2" id="ref2">2</a></sup>
-
-In this sense, although I think it would make things worse, a partial retreat toward secrecy would actually make mathematics more *normal*.  (Watch out, theoretical physics!)
+In this sense, although I think it would make things worse, a partial retreat toward secrecy would actually make mathematics more *normal*.
 
 ***
 
