@@ -25,8 +25,11 @@ To take a subject close to my heart, algebraic combinatorics, the University of 
 
 Hey Claude:
 >Go through the list of problems here:
+>
 >https://www.samuelfhopkins.com/OPAC/opac.html#Proceedings
+>
 >and on the blog:
+>
 >https://www.samuelfhopkins.com/OPAC/files/blog.pdf.
 >
 >Which three do you think are most ripe for Fable to try out via an autonomous run?
