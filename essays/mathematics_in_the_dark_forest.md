@@ -111,7 +111,7 @@ It's no longer tenable to use number and quality of published papers as proxy fo
 
 *Still write papers!!*  Written mathematics remains the most robust way of recording and transmitting knowledge.  LLM assistance in writing could (in theory) improve the quality of math papers, so long as it's used judiciously and not as a replacement for the author's own thought and judgement.  Journals and referees might play an increased role, or a diminished one --- it depends on how the editorial boards handle the coming onslaught of submissions.
 
-*Publish the prompt*.  In the past, if your paper used nontrivial new code, you were expected to publish the code.  So now, if your AI use involves anything significant, publish the prompt.  (If it was just the *Do it up, bro* prompt, think about whether you want your name on this paper!)  Related, we need strong norms around AI declarations, not for judgement either in favor or against those who use it, but to calibrate evaluation of the human author's contribution.  By now, most new arXiv posts include some such statement, so there are plenty of good examples.
+*Publish the prompt*.  In the past, if your paper used nontrivial new code, you were expected to publish the code.  So now, if your AI use involves anything significant, publish the prompt.  (If it was just the *Do it up, bro* prompt, think about whether you want your name on this paper!)  Even better, publish the whole transcript as a supplement, or offer to make it available to an interested reader.<sup><a href="#fn4" id="ref4">4</a></sup>  Related, we need strong norms around AI declarations, not for judgement either in favor or against those who use it, but to calibrate evaluation of the human author's contribution.  By now, most new arXiv posts include some such statement, so there are plenty of good examples.
 
 *Starter problems are still important; publishing their solutions less so*.  Beginners need a way to get traction, grad students need something to train on.  On the other hand, even before the last year or so, the baseline level of ~400 combinatorics arXiv postings per month was too high for journals to reliably keep up with, or for researchers to authentically digest.  We could balance placing increased value on presenting results live (via in-person lecture) against a decreased insistence on publishing minor advances in journals.
 
@@ -127,9 +127,9 @@ At least until the next model is released and the terms of the debate are scramb
 
 ***
 
-*Thanks to Liz Vivas, Alejandro Morales, Sam Hopkins, and Anakin Dey for conversations and feedback on an earlier draft.*
+*Thanks to Liz Vivas, Alejandro Morales, Sam Hopkins, Anakin Dey, and Francesco Fournier-Facio for conversations and feedback on an earlier draft.*
 
--[Dave Anderson](https://pseudoeffective.github.io), 2026.9.21
+-[Dave Anderson](https://pseudoeffective.github.io), 2026.9.22
 
 ***
 
@@ -141,6 +141,6 @@ At least until the next model is released and the terms of the debate are scramb
 <a href="#ref2">↩</a></p>
 
 
-<p id="fn3">3. Benjamin Antieau's <a href="https://antieau.github.io/2026/09/15/fast-math-slow-math.html">essay</a> is excellent on this topic.  Other variations on this theme are all over discussion boards and lunchtime conversations, so the basic ideas seem popular enough to gain traction.
+<p id="fn3">3. Benjamin Antieau's <a href="https://antieau.github.io/2026/09/15/fast-math-slow-math.html">essay</a> is excellent on this topic.  Other variations on this theme are all over discussion boards and lunchtime conversations, so the basic ideas seem popular enough to gain traction.  Incidentally, Antieau's blog also includes a scientific <a href="https://antieau.github.io/2026/09/04/what-i-asked-ai-about-mathematics.html">catalogue</a> of questions solved by autonomous (or essentially autonomous) AI runs.<a href="#ref3">↩</a></p>
 
-Incidentally, Antieau's blog also includes a scientific <a href="https://antieau.github.io/2026/09/04/what-i-asked-ai-about-mathematics.html">catalogue</a> of questions solved by autonomous (or essentially autonomous) AI runs.<a href="#ref3">↩</a></p>
+<p id="fn4">4. To the extent possible, at least.  The GitHub repos hosting my OPAC experiments include detailed summaries, but not complete transcripts of the models' chain of thought.  Commercially available models often come with restricted access to reasoning and CoT, for both IP and safety reasons.  I don't have a position on how to balance those considerations against norms of scientific openness, but Segev Gonen Cohen wrote an <a href="https://proofsandprompts.com/2026/08/11/the-question-of-reasoning-traces/">essay</a> with a thoughtful exploration of this question. <a href="#ref4">↩</a></p>
