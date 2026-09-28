@@ -1,3 +1,6 @@
+---
+layout: default
+---
 
 # Mathematics in the Dark Forest
 
