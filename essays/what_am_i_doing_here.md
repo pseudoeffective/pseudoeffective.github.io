@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # What Am I Doing Here?
 
 *where do we come from? what are we? where are we going?*

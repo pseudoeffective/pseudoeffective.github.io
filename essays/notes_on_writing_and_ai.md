@@ -1,3 +1,6 @@
+---
+layout: default
+---
 
 # Notes on Writing and AI
 [Dave Anderson](https://pseudoeffective.github.io)
