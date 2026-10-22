@@ -1,0 +1,35 @@
+<!-- Interactive version of Figure 1 (label f.qmeasures). tools/tex2post.py puts this in place of
+     the figure's images; because it has its own <figcaption>, that replaces the caption of the
+     .tex. The script is qmeasures.js, next to this file. -->
+<div class="applet" id="applet-qmeasures">
+  <canvas class="applet-stage" tabindex="0" role="img" aria-label="Columns showing the coefficient at each lattice point of kP, for the chosen q. Drag, or use the arrow keys, to turn the plot."></canvas>
+  <div class="applet-controls">
+    <label class="applet-slider" for="q-slider">\(q\)
+      <input id="q-slider" type="range" min="0" max="0.99" step="0.005" value="0.6" list="q-marks">
+      <output data-out="q" for="q-slider">0.6</output>
+    </label>
+    <div class="applet-buttons" role="group" aria-label="The values of q in the paper's figure">
+      <button type="button" data-q="0.2" aria-pressed="false">0.2</button>
+      <button type="button" data-q="0.6" aria-pressed="true">0.6</button>
+      <button type="button" data-q="0.9" aria-pressed="false">0.9</button>
+      <button type="button" data-play aria-pressed="false">play</button>
+    </div>
+  </div>
+  <div class="applet-controls">
+    <label class="applet-slider" for="k-slider">\(k\)
+      <input id="k-slider" type="range" min="1" max="50" step="1" value="30" list="k-marks">
+      <output data-out="k" for="k-slider">30</output>
+    </label>
+    <div class="applet-buttons" role="group" aria-label="View">
+      <button type="button" data-view="tilted" aria-pressed="true">tilted</button>
+      <button type="button" data-view="above" aria-pressed="false">from above</button>
+    </div>
+  </div>
+  <div class="applet-controls">
+    <span class="applet-readout" aria-live="polite">largest coefficient<span data-out="peak"></span></span>
+  </div>
+  <datalist id="q-marks"><option value="0.2"></option><option value="0.6"></option><option value="0.9"></option></datalist>
+  <datalist id="k-marks"><option value="30"></option></datalist>
+</div>
+<figcaption>Approximations to the loop-DH measure. The polytope \(P\) is a lattice hexagon, the convex hull of \((0,0)\), \((1,0)\), \((0,1)\), \((2,1)\), \((1,2)\), and \((2,2)\). The plot depicts the integer-point transform of the LHS of the formula in <a class="ref" href="#t.main-intro">Theorem&nbsp;1</a>, for the dilation \(kP\) and the chosen \(k\) and \(q\), drawn at a fixed size, so that \(kP\) is scaled back to \(P\); heights are scaled so that the largest coefficient is \(1\). The printed figure has \(k=30\) and shows \(q=0.2\), \(q=0.6\), and \(q=0.9\). Drag the plot to turn it.</figcaption>
+<script src="qmeasures.js" defer></script>

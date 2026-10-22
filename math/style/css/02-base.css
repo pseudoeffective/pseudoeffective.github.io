@@ -1,0 +1,48 @@
+/* Base typography: root font size, body font, links, selection colour, scrollbar. */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  font-size: 118.75%;  /* 19px; 20px from 900px up */
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+@media (min-width: 900px) {
+  html { font-size: 125%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+body {
+  margin: 0;
+  overflow-x: clip;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-text);
+  line-height: 1.27;  /* amsart: 13pt / 10.95pt = 1.19; a little more for screens */
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+}
+
+a { color: var(--url); text-decoration: none; }
+a:hover, a:focus-visible { text-decoration: underline; text-underline-offset: 0.15em; }
+a.ref { color: var(--ref); }
+.nobr { white-space: nowrap; }
+.cite, .cite a { color: var(--cite); }
+.cite { white-space: nowrap; font-style: normal; }
+code, .tt { font-family: var(--font-mono); font-size: 0.95em; }
+.sc { font-variant: small-caps; letter-spacing: 0.03em; }
+
+[id] { scroll-margin-top: 1.5rem; }
+
+::selection { background: var(--selection); color: var(--fg); }
+
+/* page scrollbar: a wide, square thumb in the text colour */
+::-webkit-scrollbar { width: 16px; height: 16px; background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--fg); border-radius: 0; border: 0; }
+::-webkit-scrollbar-thumb:hover { background: var(--muted); }
+::-webkit-scrollbar-corner { background: var(--bg); }
+@supports (-moz-appearance: none) {
+  html { scrollbar-color: var(--fg) var(--bg); scrollbar-width: auto; }
+}

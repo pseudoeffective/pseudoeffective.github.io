@@ -1,0 +1,66 @@
+        <!-- The title-screen composition for this post (css/04-landing.css). Each item is placed
+             by its centre in percentages of the screen: --x/--y on wide screens, --mx/--my on
+             phones (items without them carry data-phone="hide"); --i staggers the fade-in;
+             --size scales a formula, --w the width of an image or drawing. -->
+
+        <!-- the three approximations to the loop-DH measure from Figure 1, as round "portraits" -->
+        <figure class="art art-image" style="--x:9%;--y:18%;--mx:17%;--my:12%;--i:0">
+          <img src="assets/permute2q2.jpeg" alt="" decoding="async">
+          <figcaption>\(q = 0.2\)</figcaption>
+        </figure>
+        <figure class="art art-image" style="--x:91%;--y:19%;--mx:83%;--my:12%;--i:1">
+          <img src="assets/permute2q6.jpeg" alt="" decoding="async">
+          <figcaption>\(q = 0.6\)</figcaption>
+        </figure>
+        <figure class="art art-image" style="--x:91%;--y:81%;--mx:50%;--my:86%;--i:2">
+          <img src="assets/permute2q9.jpeg" alt="" decoding="async">
+          <figcaption>\(q = 0.9\)</figcaption>
+        </figure>
+
+        <!-- formulas -->
+        <div class="art art-formula" style="--x:37%;--y:11%;--i:1;--size:1.1em" data-phone="hide">\((x;q)_d = \prod_{i=1}^{d}(1 - x q^{i-1})\)</div>
+        <div class="art art-formula" style="--x:66%;--y:9%;--i:3;--size:0.95em" data-phone="hide">\(\Lambda^0 X = \big(\CC[[t]]^r \setminus Z(\Delta)_\infty\big)/G\)</div>
+        <div class="art art-formula" style="--x:13%;--y:43%;--mx:50%;--my:27%;--i:2;--size:1.05em">\(1 + x + \cdots + x^m = \dfrac{1}{1-x} + \dfrac{x^m}{1-x^{-1}}\)</div>
+        <div class="art art-formula" style="--x:88%;--y:44%;--mx:50%;--my:72%;--i:3;--size:1.45em">\(\qbinom{m}{k}\)</div>
+        <div class="art art-formula" style="--x:55%;--y:89%;--i:4;--size:1em" data-phone="hide">\(\chi_{\T}\big(\qQ(\Delta)_\infty, \OO(D^0)\big) = \sum_{u \in P \cap M} g_{\mathscr{A}_P,u}\, x^u\)</div>
+
+        <!-- the hexagon of Figure 1 with its lattice points -->
+        <div class="art art-drawing" style="--x:11%;--y:72%;--i:3;--w:6.5em" data-phone="hide">
+          <svg viewBox="0 0 90 90" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round">
+            <polygon points="15,75 45,75 75,45 75,15 45,15 15,45"/>
+            <g fill="currentColor" stroke="none">
+              <circle cx="15" cy="75" r="2.6"/><circle cx="45" cy="75" r="2.6"/>
+              <circle cx="15" cy="45" r="2.6"/><circle cx="45" cy="45" r="2.6"/><circle cx="75" cy="45" r="2.6"/>
+              <circle cx="45" cy="15" r="2.6"/><circle cx="75" cy="15" r="2.6"/>
+            </g>
+            <circle cx="75" cy="75" r="2.3" stroke-width="1"/><circle cx="15" cy="15" r="2.3" stroke-width="1"/>
+          </svg>
+        </div>
+
+        <!-- its normal fan: rays through ±e1, ±e2, ±(e1 − e2) -->
+        <div class="art art-drawing" style="--x:75%;--y:79%;--i:4;--w:5.6em" data-phone="hide">
+          <svg viewBox="0 0 90 90" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
+            <path d="M45 45H85M45 45H5M45 45V5M45 45V85M45 45L73 73M45 45L17 17"/>
+            <g fill="currentColor" stroke="none">
+              <circle cx="45" cy="45" r="2.4"/>
+              <circle cx="59" cy="45" r="1.8"/><circle cx="31" cy="45" r="1.8"/>
+              <circle cx="45" cy="31" r="1.8"/><circle cx="45" cy="59" r="1.8"/>
+              <circle cx="59" cy="59" r="1.8"/><circle cx="31" cy="31" r="1.8"/>
+            </g>
+          </svg>
+        </div>
+
+        <!-- multinomial coefficients becoming a Gaussian (Theorem 2) -->
+        <div class="art art-drawing" style="--x:29%;--y:86%;--i:5;--w:7em" data-phone="hide">
+          <svg viewBox="0 0 120 64" fill="none" stroke="currentColor" stroke-width="1.1">
+            <g stroke-width="0.9">
+              <rect x="21.9" y="56.4" width="6.9" height="3.6"/><rect x="30.4" y="48.1" width="6.9" height="11.9"/>
+              <rect x="38.8" y="33.2" width="6.9" height="26.8"/><rect x="47.3" y="17.1" width="6.9" height="42.9"/>
+              <rect x="55.8" y="10" width="6.9" height="50"/><rect x="64.2" y="17.1" width="6.9" height="42.9"/>
+              <rect x="72.7" y="33.2" width="6.9" height="26.8"/><rect x="81.2" y="48.1" width="6.9" height="11.9"/>
+              <rect x="89.6" y="56.4" width="6.9" height="3.6"/>
+            </g>
+            <polyline stroke-width="1.4" points="5,60 14,59.6 20,58.8 25,57.1 29,54.7 32,51.9 35,48.3 38,43.8 41,38.4 44,32.4 47,26.3 50,20.4 53,15.4 56,11.8 58,10.5 60,10 62,10.5 64,11.8 67,15.4 70,20.4 73,26.3 76,32.4 79,38.4 82,43.8 85,48.3 88,51.9 91,54.7 95,57.1 100,58.8 106,59.6 115,60"/>
+            <path d="M2 60.5H118" stroke-width="0.8"/>
+          </svg>
+        </div>

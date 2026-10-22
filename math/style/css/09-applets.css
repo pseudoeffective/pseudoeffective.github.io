@@ -1,0 +1,63 @@
+/* Interactive figures: a canvas, a row or two of controls (a slider, small-caps buttons that
+   act as a group of toggles), and a readout. The caption is a margin note on wide screens
+   (css/07-margin.css, .fig figcaption). The script of each figure lives with its post. */
+
+.applet { margin: 0; }
+.applet canvas {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 10;
+  border: 1px solid var(--rule);
+  background: var(--bg);
+  touch-action: none;
+  cursor: grab;
+}
+.applet canvas:active { cursor: grabbing; }
+.applet canvas:focus-visible { outline: 2px solid var(--ref); outline-offset: 2px; }
+
+.applet-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem 1.2rem;
+  margin-top: 0.55rem;
+  font-size: 0.9rem;
+}
+.applet-controls + .applet-controls { margin-top: 0.3rem; }
+
+.applet-buttons { display: flex; flex-wrap: wrap; gap: 0.2rem 1rem; }
+.applet-buttons button {
+  font: inherit;
+  font-variant: small-caps;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--muted);
+  cursor: pointer;
+}
+.applet-buttons button:hover { color: var(--fg); }
+.applet-buttons button[aria-pressed="true"] {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.applet-buttons button:focus-visible { outline: 2px solid var(--ref); outline-offset: 2px; }
+
+.applet-slider { display: inline-flex; align-items: center; gap: 0.5rem; }
+.applet-slider input { width: 13rem; max-width: 50vw; accent-color: var(--fg); }
+.applet-slider output { min-width: 2.6em; font-variant-numeric: tabular-nums; }
+
+.applet-readout { color: var(--muted); font-variant-numeric: tabular-nums; }
+.applet-readout sup { font-size: 0.7em; line-height: 0; }
+
+@media (max-width: 560px) {
+  .applet-slider input { width: 9rem; }
+  .applet-buttons { gap: 0.15rem 0.7rem; }
+}
+@media print {
+  .applet-controls { display: none; }
+}

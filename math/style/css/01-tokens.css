@@ -1,0 +1,61 @@
+/* Design tokens: the colours of the light and the dark theme, and the widths of the three
+   columns of the wide layout. Every other file refers to these variables, so this is the
+   first place to look when restyling.
+
+   The design follows https://bourgain-talagrand.munozlahoz.xyz : a LaTeX-faithful page
+   (amsart proportions, Computer Modern, hyperref link colours) with a title screen, a sticky
+   contents column on the left and Tufte-style margin notes on the right. */
+
+:root {
+  color-scheme: light;
+  --bg: #ffffff;
+  --fg: #0b0b0b;
+  --muted: #47433c;
+  --rule: #cbc5b8;
+  --surface: #f4f1e8;
+  --ref: #163e85;      /* cross-references: LaTeX's RoyalBlue */
+  --cite: #13582a;     /* citations: LaTeX's ForestGreen */
+  --url: #8a3210;      /* links to the web: LaTeX's RedOrange */
+  --target: #fbefb9;   /* highlight of the theorem/equation you jumped to */
+  --selection: #dcd8ce;
+
+  --measure: 34rem;     /* the text column: amsart's \textwidth, about 70 characters */
+  --margin: 13rem;      /* margin notes (right) on wide screens */
+  --toc: 14.5rem;       /* contents (left) on wide screens */
+  --toc-gap: 2.5rem;
+  --margin-gap: 3rem;
+
+  /* the fonts embedded in fonts.css (tools/subset_fonts.py) */
+  --font-text: "NewCM10", "CMU Serif", "Latin Modern Roman", "STIX Two Text", Georgia, serif;
+  --font-display: "Charter", "XCharter", "Bitstream Charter", "NewCM10", Georgia, serif;
+  --font-mono: "NewCMMono10", ui-monospace, monospace;
+}
+/* dark: the system setting (unless the reader chose light), or the reader's choice */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #121314;
+    --fg: #f3f0e9;
+    --muted: #c2bdb3;
+    --rule: #4a4a4f;
+    --surface: #1d1e21;
+    --ref: #a9c6ff;
+    --cite: #93e3a9;
+    --url: #ffb791;
+    --target: #463c1c;
+    --selection: #44413a;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #121314;
+  --fg: #f3f0e9;
+  --muted: #c2bdb3;
+  --rule: #4a4a4f;
+  --surface: #1d1e21;
+  --ref: #a9c6ff;
+  --cite: #93e3a9;
+  --url: #ffb791;
+  --target: #463c1c;
+  --selection: #44413a;
+}

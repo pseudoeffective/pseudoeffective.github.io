@@ -1,0 +1,104 @@
+/* Footnotes, margin notes and figures. On wide screens footnotes sit in the right margin,
+   level with the text they belong to (Tufte-style sidenotes), and so do figure captions;
+   on narrow screens the footnotes are listed at the end of the paper. */
+
+/* all the text in the margin (notes, footnotes, figure captions) looks the same:
+   Charter, smaller and grey; and so do the footnotes and captions on narrow screens */
+.margin-note, .sidenote, .footnotes, .fig figcaption {
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  line-height: 1.38;
+  color: var(--muted);
+}
+
+/* ---------------------------------------------------------------- footnotes */
+sup.fnref { line-height: 0; font-size: 0.75em; }
+sup.fnref a { color: var(--ref); padding: 0 0.1em; }
+
+.footnotes { margin-top: 3rem; }
+.footnotes::before {
+  content: "";
+  display: block;
+  width: 8rem;
+  border-top: 1px solid var(--rule);
+  margin-bottom: 0.8rem;
+}
+.footnotes ol { list-style: none; margin: 0; padding: 0; }
+.footnotes li { position: relative; padding-left: 1.6em; margin-bottom: 0.5em; }
+.fn-label { position: absolute; left: 0; }
+.fnback { color: var(--ref); }
+
+.sidenote { display: none; }
+@media (min-width: 1380px) {
+  .sidenote {
+    display: block;
+    float: right;
+    clear: right;
+    position: relative;
+    width: var(--margin);
+    margin-right: calc(-1 * (var(--margin) + var(--margin-gap)));
+    margin-top: 0.15rem;
+    font-style: normal;
+    text-align: left;
+    text-indent: 0;
+    hyphens: manual;
+    -webkit-hyphens: manual;
+  }
+  .sidenote .fn-label { position: static; margin-right: 0.15em; }
+  .footnotes { display: none; }
+  sup.fnref a { pointer-events: none; }
+}
+
+/* ---------------------------------------------------------------- margin notes */
+/* <aside class="margin-note">: a remark that is not part of the paper (history, a picture,
+   a pointer). In the margin on wide screens, a small centred aside otherwise. */
+.paper .margin-note p { text-align: left; text-indent: 0; hyphens: manual; overflow: visible; }
+.paper .margin-note p + p { margin-top: 0.5em; }
+@media (min-width: 1380px) {
+  .margin-note {
+    float: right;
+    clear: right;
+    width: var(--margin);
+    margin-right: calc(-1 * (var(--margin) + var(--margin-gap)));
+    margin-top: 0.2rem;
+  }
+}
+@media (max-width: 1379px) {
+  .margin-note { max-width: 30rem; margin: 1.1em auto; }
+}
+
+/* ---------------------------------------------------------------- figures */
+.fig { margin: 1.4em 0 1.3em; }
+.fig-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem 0.9rem;
+}
+.fig-images img {
+  display: block;
+  height: var(--fig-h, 6.5rem);
+  width: auto;
+  max-width: 100%;
+}
+:root[data-theme="dark"] .fig-images img { filter: brightness(0.86); border-radius: 3px; }
+.fig figcaption { margin-top: 0.7rem; text-align: left; }
+.fig-name { font-variant: small-caps; letter-spacing: 0.03em; color: var(--fg); }
+.fig:target { background: var(--target); box-shadow: 0 0 0 0.6rem var(--target); }
+@media (max-width: 560px) {
+  .fig-images img { height: auto; width: 100%; max-width: 18rem; }
+}
+/* wide screens: the caption becomes a margin note beside the figure */
+@media (min-width: 1380px) {
+  .fig { position: relative; }
+  .fig figcaption {
+    position: absolute;
+    top: -0.35em;
+    left: calc(100% + var(--margin-gap));
+    width: var(--margin);
+    margin: 0;
+    hyphens: manual;
+    -webkit-hyphens: manual;
+  }
+}
